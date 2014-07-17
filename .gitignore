@@ -1,0 +1,6 @@
+Web.config
+bin/
+obj/
+csx/
+.svn/
+Temp/

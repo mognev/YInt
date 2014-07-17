@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+compressed=0&data=<?xml version="1.0" encoding="UTF-8"?><tracks clid="19567833">
+  <track uuid="241" category="n">
+    <point latitude="51.64871" longitude="39.19708" avg_speed="0" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="249" category="n">
+    <point latitude="51.67062" longitude="39.20471" avg_speed="0" direction="0" time="11122013:165252" />
+  </track>
+  <track uuid="253" category="n">
+    <point latitude="51.63704" longitude="39.2084" avg_speed="0" direction="0" time="11122013:165247" />
+  </track>
+  <track uuid="255" category="n">
+    <point latitude="51.73282" longitude="39.26288" avg_speed="0" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="256" category="n">
+    <point latitude="51.66816" longitude="39.20172" avg_speed="58" direction="0" time="11122013:165252" />
+  </track>
+  <track uuid="261" category="n">
+    <point latitude="51.65761" longitude="39.19098" avg_speed="0" direction="0" time="11122013:165249" />
+  </track>
+  <track uuid="263" category="n">
+    <point latitude="51.65823" longitude="39.20288" avg_speed="0" direction="0" time="11122013:165244" />
+  </track>
+  <track uuid="293" category="n">
+    <point latitude="51.63508" longitude="39.33298" avg_speed="0" direction="0" time="11122013:165249" />
+  </track>
+  <track uuid="299" category="n">
+    <point latitude="51.72611" longitude="39.20358" avg_speed="0" direction="0" time="11122013:165247" />
+  </track>
+  <track uuid="306" category="n">
+    <point latitude="51.62596" longitude="39.17665" avg_speed="0" direction="0" time="11122013:165243" />
+  </track>
+  <track uuid="314" category="n">
+    <point latitude="51.66349" longitude="39.18826" avg_speed="31" direction="0" time="11122013:165238" />
+  </track>
+  <track uuid="315" category="n">
+    <point latitude="51.69491" longitude="39.19944" avg_speed="0" direction="0" time="11122013:165248" />
+  </track>
+  <track uuid="325" category="n">
+    <point latitude="51.68092" longitude="39.19224" avg_speed="0" direction="0" time="11122013:165252" />
+  </track>
+  <track uuid="328" category="n">
+    <point latitude="51.66706" longitude="39.23002" avg_speed="62" direction="0" time="11122013:165242" />
+  </track>
+  <track uuid="343" category="n">
+    <point latitude="51.68946" longitude="39.20967" avg_speed="0" direction="0" time="11122013:165232" />
+  </track>
+  <track uuid="371" category="n">
+    <point latitude="51.67467" longitude="39.1465" avg_speed="0" direction="0" time="11122013:165248" />
+  </track>
+  <track uuid="373" category="n">
+    <point latitude="51.65784" longitude="39.18947" avg_speed="0" direction="0" time="11122013:165243" />
+  </track>
+  <track uuid="379" category="n">
+    <point latitude="51.63568" longitude="39.19377" avg_speed="27" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="380" category="n">
+    <point latitude="51.56587" longitude="39.2398" avg_speed="0" direction="0" time="11122013:165249" />
+  </track>
+  <track uuid="406" category="n">
+    <point latitude="51.70037" longitude="39.1055" avg_speed="0" direction="0" time="11122013:165247" />
+  </track>
+  <track uuid="410" category="n">
+    <point latitude="51.6496" longitude="39.1618" avg_speed="0" direction="0" time="11122013:165239" />
+  </track>
+  <track uuid="430" category="n">
+    <point latitude="51.74146" longitude="39.18239" avg_speed="12" direction="0" time="11122013:165251" />
+  </track>
+  <track uuid="441" category="n">
+    <point latitude="51.69512" longitude="39.26373" avg_speed="0" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="445" category="n">
+    <point latitude="51.68332" longitude="39.21558" avg_speed="0" direction="0" time="11122013:165243" />
+  </track>
+  <track uuid="451" category="n">
+    <point latitude="51.6482" longitude="39.10109" avg_speed="0" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="453" category="n">
+    <point latitude="51.64444" longitude="39.12217" avg_speed="0" direction="0" time="11122013:165240" />
+  </track>
+  <track uuid="465" category="n">
+    <point latitude="51.65031" longitude="39.17032" avg_speed="3" direction="0" time="11122013:165246" />
+  </track>
+  <track uuid="467" category="n">
+    <point latitude="51.66337" longitude="39.12866" avg_speed="0" direction="0" time="11122013:165248" />
+  </track>
+  <track uuid="476" category="n">
+    <point latitude="51.67357" longitude="39.14795" avg_speed="33" direction="0" time="11122013:165245" />
+  </track>
+  <track uuid="479" category="n">
+    <point latitude="51.65357" longitude="39.17364" avg_speed="0" direction="0" time="11122013:165248" />
+  </track>
+  <track uuid="483" category="n">
+    <point latitude="51.66612" longitude="39.19455" avg_speed="13" direction="0" time="11122013:165251" />
+  </track>
+  <track uuid="489" category="n">
+    <point latitude="51.71271" longitude="39.17571" avg_speed="0" direction="0" time="11122013:165251" />
+  </track>
+  <track uuid="498" category="n">
+    <point latitude="51.6498" longitude="39.194" avg_speed="50" direction="0" time="11122013:165248" />
+  </track>
+  <track uuid="499" category="n">
+    <point latitude="51.64131" longitude="39.27134" avg_speed="19" direction="0" time="11122013:165238" />
+  </track>
+  <track uuid="517" category="n">
+    <point latitude="51.71272" longitude="39.1944" avg_speed="44" direction="0" time="11122013:165248" />
+  </track>
+  <track uuid="533" category="n">
+    <point latitude="51.6125" longitude="39.25244" avg_speed="0" direction="0" time="11122013:165241" />
+  </track>
+  <track uuid="538" category="n">
+    <point latitude="51.62909" longitude="39.23056" avg_speed="0" direction="0" time="11122013:165240" />
+  </track>
+  <track uuid="546" category="n">
+    <point latitude="51.69019" longitude="39.20934" avg_speed="9" direction="0" time="11122013:165239" />
+  </track>
+  <track uuid="555" category="n">
+    <point latitude="51.68544" longitude="39.26468" avg_speed="50" direction="0" time="11122013:165247" />
+  </track>
+  <track uuid="565" category="n">
+    <point latitude="51.65522" longitude="39.13855" avg_speed="0" direction="0" time="11122013:165235" />
+  </track>
+  <track uuid="573" category="n">
+    <point latitude="51.66443" longitude="39.19772" avg_speed="33" direction="0" time="11122013:165232" />
+  </track>
+  <track uuid="597" category="n">
+    <point latitude="51.67426" longitude="39.24871" avg_speed="17" direction="0" time="11122013:165249" />
+  </track>
+  <track uuid="604" category="n">
+    <point latitude="51.65911" longitude="39.19466" avg_speed="0" direction="0" time="11122013:165248" />
+  </track>
+  <track uuid="605" category="n">
+    <point latitude="51.65348" longitude="39.29264" avg_speed="0" direction="0" time="11122013:165246" />
+  </track>
+  <track uuid="607" category="n">
+    <point latitude="51.70611" longitude="39.16238" avg_speed="0" direction="0" time="11122013:165247" />
+  </track>
+  <track uuid="627" category="n">
+    <point latitude="51.70646" longitude="39.18828" avg_speed="47" direction="0" time="11122013:165248" />
+  </track>
+  <track uuid="638" category="n">
+    <point latitude="51.65391" longitude="39.14851" avg_speed="0" direction="0" time="11122013:165233" />
+  </track>
+  <track uuid="649" category="n">
+    <point latitude="51.64985" longitude="39.26909" avg_speed="26" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="653" category="n">
+    <point latitude="51.52788" longitude="39.23387" avg_speed="26" direction="0" time="11122013:165245" />
+  </track>
+  <track uuid="665" category="n">
+    <point latitude="51.71042" longitude="39.19518" avg_speed="0" direction="0" time="11122013:165233" />
+  </track>
+  <track uuid="680" category="n">
+    <point latitude="51.68364" longitude="39.19495" avg_speed="0" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="687" category="n">
+    <point latitude="51.64319" longitude="39.17161" avg_speed="0" direction="0" time="11122013:165246" />
+  </track>
+  <track uuid="688" category="n">
+    <point latitude="51.68525" longitude="39.26772" avg_speed="0" direction="0" time="11122013:165239" />
+  </track>
+  <track uuid="693" category="n">
+    <point latitude="51.67478" longitude="39.20849" avg_speed="72" direction="0" time="11122013:165240" />
+  </track>
+  <track uuid="694" category="n">
+    <point latitude="51.67478" longitude="39.21514" avg_speed="0" direction="0" time="11122013:165247" />
+  </track>
+  <track uuid="695" category="n">
+    <point latitude="51.66343" longitude="39.1285" avg_speed="0" direction="0" time="11122013:165240" />
+  </track>
+  <track uuid="696" category="n">
+    <point latitude="51.78964" longitude="39.20428" avg_speed="0" direction="0" time="11122013:165252" />
+  </track>
+  <track uuid="697" category="n">
+    <point latitude="51.70578" longitude="39.13748" avg_speed="0" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="704" category="n">
+    <point latitude="51.64984" longitude="39.1619" avg_speed="5" direction="0" time="11122013:165244" />
+  </track>
+  <track uuid="707" category="n">
+    <point latitude="51.692" longitude="39.18328" avg_speed="0" direction="0" time="11122013:165246" />
+  </track>
+  <track uuid="709" category="n">
+    <point latitude="51.70208" longitude="39.1685" avg_speed="0" direction="0" time="11122013:165240" />
+  </track>
+  <track uuid="711" category="n">
+    <point latitude="51.68497" longitude="39.12097" avg_speed="41" direction="0" time="11122013:165247" />
+  </track>
+  <track uuid="717" category="n">
+    <point latitude="51.72086" longitude="39.14829" avg_speed="37" direction="0" time="11122013:165252" />
+  </track>
+  <track uuid="725" category="n">
+    <point latitude="51.67924" longitude="39.21472" avg_speed="10" direction="0" time="11122013:165251" />
+  </track>
+  <track uuid="741" category="n">
+    <point latitude="51.71199" longitude="39.16051" avg_speed="48" direction="0" time="11122013:165247" />
+  </track>
+  <track uuid="749" category="n">
+    <point latitude="51.69469" longitude="39.19989" avg_speed="69" direction="0" time="11122013:165248" />
+  </track>
+  <track uuid="751" category="n">
+    <point latitude="51.63742" longitude="39.20791" avg_speed="78" direction="0" time="11122013:165249" />
+  </track>
+  <track uuid="768" category="n">
+    <point latitude="51.66023" longitude="39.15389" avg_speed="77" direction="0" time="11122013:165249" />
+  </track>
+  <track uuid="772" category="n">
+    <point latitude="51.7013" longitude="39.152" avg_speed="0" direction="0" time="11122013:165247" />
+  </track>
+  <track uuid="781" category="n">
+    <point latitude="51.73147" longitude="39.17951" avg_speed="20" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="787" category="n">
+    <point latitude="51.6541" longitude="39.24699" avg_speed="0" direction="0" time="11122013:165249" />
+  </track>
+  <track uuid="803" category="n">
+    <point latitude="51.64855" longitude="39.24042" avg_speed="69" direction="0" time="11122013:165244" />
+  </track>
+  <track uuid="808" category="n">
+    <point latitude="51.66335" longitude="39.20576" avg_speed="0" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="814" category="n">
+    <point latitude="51.65342" longitude="39.1194" avg_speed="39" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="824" category="n">
+    <point latitude="51.6417" longitude="39.1078" avg_speed="0" direction="0" time="11122013:165244" />
+  </track>
+  <track uuid="835" category="n">
+    <point latitude="51.69303" longitude="39.22595" avg_speed="0" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="836" category="n">
+    <point latitude="51.68514" longitude="39.19729" avg_speed="0" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="849" category="n">
+    <point latitude="51.61258" longitude="39.22997" avg_speed="0" direction="0" time="11122013:165252" />
+  </track>
+  <track uuid="851" category="n">
+    <point latitude="51.69828" longitude="39.18956" avg_speed="48" direction="0" time="11122013:165246" />
+  </track>
+  <track uuid="852" category="n">
+    <point latitude="51.64022" longitude="39.09656" avg_speed="53" direction="0" time="11122013:165251" />
+  </track>
+  <track uuid="871" category="n">
+    <point latitude="51.69432" longitude="39.17238" avg_speed="0" direction="0" time="11122013:165252" />
+  </track>
+  <track uuid="873" category="n">
+    <point latitude="51.66406" longitude="39.20567" avg_speed="12" direction="0" time="11122013:165246" />
+  </track>
+  <track uuid="876" category="n">
+    <point latitude="51.63787" longitude="39.20722" avg_speed="0" direction="0" time="11122013:165248" />
+  </track>
+  <track uuid="883" category="n">
+    <point latitude="51.68003" longitude="39.28675" avg_speed="32" direction="0" time="11122013:165247" />
+  </track>
+  <track uuid="884" category="n">
+    <point latitude="51.70777" longitude="39.13913" avg_speed="0" direction="0" time="11122013:165252" />
+  </track>
+  <track uuid="889" category="n">
+    <point latitude="51.65738" longitude="39.18475" avg_speed="2" direction="0" time="11122013:165246" />
+  </track>
+  <track uuid="890" category="n">
+    <point latitude="51.61559" longitude="39.24563" avg_speed="44" direction="0" time="11122013:165233" />
+  </track>
+  <track uuid="893" category="n">
+    <point latitude="51.67928" longitude="39.32637" avg_speed="46" direction="0" time="11122013:165252" />
+  </track>
+  <track uuid="898" category="n">
+    <point latitude="51.65163" longitude="39.13334" avg_speed="40" direction="0" time="11122013:165252" />
+  </track>
+  <track uuid="902" category="n">
+    <point latitude="51.70939" longitude="39.18117" avg_speed="0" direction="0" time="11122013:165250" />
+  </track>
+  <track uuid="903" category="n">
+    <point latitude="51.65332" longitude="39.17276" avg_speed="0" direction="0" time="11122013:165247" />
+  </track>
+  <track uuid="904" category="n">
+    <point latitude="51.66974" longitude="39.21818" avg_speed="0" direction="0" time="11122013:165241" />
+  </track>
+  <track uuid="910" category="n">
+    <point latitude="51.65704" longitude="39.18971" avg_speed="0" direction="0" time="11122013:165249" />
+  </track>
+  <track uuid="911" category="n">
+    <point latitude="51.68635" longitude="39.16545" avg_speed="0" direction="0" time="11122013:165245" />
+  </track>
+</tracks>
