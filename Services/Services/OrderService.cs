@@ -44,6 +44,11 @@ namespace Business.Services
             }
         }
 
+        /// <summary>
+        /// Get order by orderId
+        /// </summary>
+        /// <param name="orderId"></param>
+        /// <returns></returns>
         public Order GetOrderById(String orderId)
         {
             return _orderRepository.Table.FirstOrDefault(x => x.OrderId == orderId && !x.IsDeleted.Value );
