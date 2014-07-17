@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net;
 using System.Text;
 using System.Xml;
@@ -37,11 +38,14 @@ namespace Business.Schedule
                         try
                         {
                             String res = client.UploadString(uri, "POST", request);
+                            Trace.TraceInformation("{0} Update driver status success", DateTime.Now.ToString());
                         }
-                        catch (WebException)
+                        catch (WebException e)
                         {
-
+                            Trace.TraceInformation("{0} Update driver status error {1} request={2}", DateTime.Now.ToString(), e.Message, request);
                         }
+
+                        Trace.Flush();
                     }
                 }
             }

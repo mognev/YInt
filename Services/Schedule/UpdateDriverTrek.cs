@@ -46,7 +46,7 @@ namespace Business.Schedule
                         HttpWebResponse res = (HttpWebResponse) req.GetResponse();
                         if (res.StatusCode == HttpStatusCode.OK)
                         {
-                            //Trace.TraceInformation("{0} Update driver trek success", DateTime.Now.ToString());
+                            Trace.TraceInformation("{0} Update driver trek success", DateTime.Now.ToString());
                         }
                     }
                     catch (WebException e)
