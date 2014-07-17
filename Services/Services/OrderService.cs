@@ -64,6 +64,11 @@ namespace Business.Services
             return _orderRepository.Table.Where(x => x.YandexAcceptOrder.Value && !x.IsDeleted.Value).ToList().LastOrDefault();
         }
 
+        /// <summary>
+        /// Get order always (even if deleted)
+        /// </summary>
+        /// <param name="orderId">String orderId</param>
+        /// <returns></returns>
         public Order GetOrderByIdForCancel(String orderId)
         {
             return _orderRepository.Table.FirstOrDefault(x => x.OrderId == orderId);
