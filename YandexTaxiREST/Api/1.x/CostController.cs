@@ -19,17 +19,6 @@ namespace YandexTaxiREST.WebAPI
             _orderService = orderService;
         }
 
-        //public void Get()
-        //{
-        //    if (writer != null)
-        //    {
-        //        writer.Info(Request, ConfigurationHelper.DebugInformation, "Get the list of products.");
-        //    }
-
-        //    var o = _orderService.GetOrderById("43098ecef32848f1b9d76133eb54c4bb");
-        //    int d = 1;
-        //}
-
         //Get api/values
         public HttpResponseMessage Get(String time, String route)
         {

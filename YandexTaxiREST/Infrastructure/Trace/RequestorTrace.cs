@@ -14,14 +14,14 @@ namespace YandexTaxiREST.Infrastructure.Trace
             {
                 TraceRecord rec = new TraceRecord(request, category, level);
                 traceAction(rec);
-                WriteTrace(rec);
+                WriteTrace(rec, category);
             }
         }
 
-        protected void WriteTrace(TraceRecord rec)
+        protected void WriteTrace(TraceRecord rec, String category)
         {
-            var message = String.Format("{0} -> {1}", DateTime.Now.ToString(), rec.Message);
-            System.Diagnostics.Trace.WriteLine(message, rec.Category);
+            var message = String.Format("{2}: {0} -> {1}", DateTime.Now.ToString(), rec.Message, category);
+            System.Diagnostics.Trace.WriteLine(message);
             System.Diagnostics.Trace.Flush(); 
         }
     }

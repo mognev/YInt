@@ -180,6 +180,7 @@
     <Compile Include="Infrastructure\Factories\UnityControllerActivator.cs" />
     <Compile Include="Infrastructure\Factories\UnityDependencyResolver.cs" />
     <Compile Include="Infrastructure\Factories\UnityHttpControllerActivator.cs" />
+    <Compile Include="Infrastructure\Trace\RequestFilter.cs" />
     <Compile Include="Infrastructure\Trace\RequestorTrace.cs" />
     <Compile Include="Infrastructure\Trace\TraceConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
