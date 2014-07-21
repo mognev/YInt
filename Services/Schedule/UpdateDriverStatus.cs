@@ -10,6 +10,7 @@ using Core.Domain;
 using Core.Extension.XmlConverter;
 using Core.Instructure;
 using Core.Scheduler.Task.Interface;
+using System.IO;
 
 namespace Business.Schedule
 {
@@ -31,22 +32,36 @@ namespace Business.Schedule
 
                     String request = driverService.SheduleGetDrivers().ToXmlDriverStatusString();
 
-                    using (WebClient client = new WebClient())
+                    System.Net.ServicePointManager.Expect100Continue = false;
+                    Uri uri = new Uri(url);
+                    HttpWebRequest req = (HttpWebRequest)WebRequest.Create(uri);
+                    req.Method = "POST";
+                    using (Stream reqs = req.GetRequestStream())
                     {
-                        Uri uri = new Uri(url);
-                        client.Encoding = Encoding.UTF8;
-                        try
+                        byte[] bytes = Encoding.Default.GetBytes(request);
+                        reqs.Write(bytes, 0, bytes.Length);
+                    }
+
+
+                    try
+                    {
+                        HttpWebResponse res = (HttpWebResponse)req.GetResponse();
+                        if (res.StatusCode == HttpStatusCode.OK)
                         {
-                            String res = client.UploadString(uri, "POST", request);
                             Trace.TraceInformation("{0} Update driver status success", DateTime.Now.ToString());
                         }
-                        catch (WebException e)
+                        else
                         {
-                            Trace.TraceInformation("{0} Update driver status error {1} request={2}", DateTime.Now.ToString(), e.Message, request);
+                            Trace.TraceInformation("{0} Update driver status error request={1}", DateTime.Now.ToString(), request);
                         }
-
-                        Trace.Flush();
                     }
+                    catch (WebException e)
+                    {
+                        Trace.TraceInformation("{0} Update driver status error {1} request={2}", DateTime.Now.ToString(), e.Message, request);
+                    }
+
+                    Trace.Flush();
+
                 }
             }
         }

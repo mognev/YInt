@@ -48,6 +48,10 @@ namespace Business.Schedule
                         {
                             Trace.TraceInformation("{0} Update driver trek success", DateTime.Now.ToString());
                         }
+                        else
+                        {
+                            Trace.TraceInformation("{0} Update driver trek error request={1}", DateTime.Now.ToString(), request);
+                        }
                     }
                     catch (WebException e)
                     {

@@ -417,12 +417,22 @@
                 }
                 catch (WebException e)
                 {
+                    String reason = String.Empty;
                     HttpWebResponse response = (HttpWebResponse)e.Response;
-                    if (response.StatusCode == HttpStatusCode.NotFound ||
-                        response.StatusCode == HttpStatusCode.Gone)
+
+                    switch (response.StatusCode)
                     {
-                        CancelOrder(orderId, String.Empty);
+                        case HttpStatusCode.NotFound:
+                            reason = "notfound";
+                            break;
+                        case HttpStatusCode.Gone:
+                            reason = "assigned";
+                            break;
+                        default:
+                            break;
                     }
+
+                    CancelOrder(orderId, reason);
                 }
             }
         }
