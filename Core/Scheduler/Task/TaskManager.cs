@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,7 +70,7 @@ namespace Core.Scheduler
 
         internal void ProcessException(Core.Scheduler.Task.Task task, Exception ex)
         {
-            throw new NotImplementedException();
+            Trace.TraceInformation("{0} Schedule error {1}", DateTime.Now.ToString(), ex.Message); ;
         }
     }
 }

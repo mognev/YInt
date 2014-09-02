@@ -19,10 +19,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/17/2014 17:36:14</publishTime>
     </File>
     <File Include="bin/Business.dll">
-      <publishTime>07/18/2014 20:22:01</publishTime>
+      <publishTime>07/23/2014 20:40:49</publishTime>
     </File>
     <File Include="bin/Core.dll">
-      <publishTime>07/17/2014 19:25:03</publishTime>
+      <publishTime>07/23/2014 19:46:15</publishTime>
     </File>
     <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
       <publishTime>07/17/2014 17:36:15</publishTime>
@@ -109,10 +109,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/17/2014 17:36:15</publishTime>
     </File>
     <File Include="bin/ru/System.Net.Http.resources.dll">
-      <publishTime>09/07/2013 11:34:40</publishTime>
+      <publishTime>07/09/2013 11:34:40</publishTime>
     </File>
     <File Include="bin/ru/System.Net.Http.WebRequest.resources.dll">
-      <publishTime>09/07/2013 11:34:42</publishTime>
+      <publishTime>07/09/2013 11:34:42</publishTime>
     </File>
     <File Include="bin/ru/System.Spatial.resources.dll">
       <publishTime>07/17/2014 17:36:16</publishTime>
@@ -121,13 +121,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/System.Net.Http.dll">
-      <publishTime>09/07/2013 11:04:48</publishTime>
+      <publishTime>07/09/2013 11:04:48</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>07/17/2014 17:36:15</publishTime>
     </File>
     <File Include="bin/System.Net.Http.WebRequest.dll">
-      <publishTime>09/07/2013 11:04:48</publishTime>
+      <publishTime>07/09/2013 11:04:48</publishTime>
     </File>
     <File Include="bin/System.Spatial.dll">
       <publishTime>07/17/2014 17:36:16</publishTime>
@@ -172,7 +172,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/17/2014 17:36:16</publishTime>
     </File>
     <File Include="bin/YandexTaxiREST.dll">
-      <publishTime>07/18/2014 21:14:15</publishTime>
+      <publishTime>07/23/2014 20:40:50</publishTime>
     </File>
     <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
       <publishTime>07/17/2014 17:36:15</publishTime>
