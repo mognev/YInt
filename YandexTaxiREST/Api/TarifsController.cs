@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.Text;
 using Business.Services.Interfaces;
 using Core.Extension.XmlConverter;
@@ -18,6 +19,7 @@ namespace YandexTaxiREST.WebAPI
         // GET api/values
         public HttpResponseMessage Get()
         {
+            throw new Exception("Erororoororor esdsdsd");
             return new HttpResponseMessage()
             {
                 Content = new StringContent(
