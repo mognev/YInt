@@ -6,8 +6,8 @@
 
     public interface IDriverService : IDisposable
     {
-        List<Driver> GetDrivers();
-        List<DriverShedule> SheduleGetDrivers();
+        IEnumerable<Driver> GetDrivers();
+        IEnumerable<DriverShedule> SheduleGetDrivers();
         Driver GetDriverById(Int32 driverId);
     }
 }

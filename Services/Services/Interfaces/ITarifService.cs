@@ -6,6 +6,6 @@ namespace Business.Services.Interfaces
     public interface ITarifService
     {
         Tarif GetFirstTarif();
-        List<Tarif> GetTarifs();
+        IEnumerable<Tarif> GetTarifs();
     }
 }

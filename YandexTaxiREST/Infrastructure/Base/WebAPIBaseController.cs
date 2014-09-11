@@ -21,10 +21,10 @@
         /// Logs exception.
         /// </summary>
         /// <param name="ex">Exception instance.</param>
-        protected void LogException(Exception ex)
-        {
-            Elmah.ErrorSignal.FromCurrentContext().Raise(ex);
-        }
+        //protected void LogException(Exception ex)
+        //{
+        //    Elmah.ErrorSignal.FromCurrentContext().Raise(ex);
+        //}
 
         #endregion Protected Methods
 

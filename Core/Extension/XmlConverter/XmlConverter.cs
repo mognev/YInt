@@ -16,7 +16,7 @@ namespace Core.Extension.XmlConverter
             "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Holiday"
         };
 
-        public static String ToXmlTarifString(this List<Tarif> tarifsList)
+        public static String ToXmlTarifString(this IEnumerable<Tarif> tarifsList)
         {
 
             XmlDocument document = new XmlDocument();
@@ -150,7 +150,7 @@ namespace Core.Extension.XmlConverter
 
         }
 
-        public static String ToXmlTarif2String(this List<Tarif> tarifsList)
+        public static String ToXmlTarif2String(this IEnumerable<Tarif> tarifsList)
         {
 
             XmlDocument document = new XmlDocument();
@@ -216,7 +216,7 @@ namespace Core.Extension.XmlConverter
                 timeInterval.AppendChild(startTimeInterval);
                 timeInterval.AppendChild(endTimeInterval);
 
-                
+
                 span.AppendChild(timeInterval);
 
                 schedule.AppendChild(span);
@@ -357,7 +357,7 @@ namespace Core.Extension.XmlConverter
         }
 
 
-        public static String ToXmlDriverString(this List<Driver> driverList, String tarif)
+        public static String ToXmlDriverString(this IEnumerable<Driver> driverList, String tarif)
         {
             XmlDocument document = new XmlDocument();
             XmlDeclaration xmldecl;
@@ -370,6 +370,25 @@ namespace Core.Extension.XmlConverter
                 XmlElement uuid = document.CreateElement("Uuid");
                 uuid.InnerText = item.ID_DRIVER.ToString();
                 car.AppendChild(uuid);
+                if (!String.IsNullOrEmpty(ConfigurationHelper.Clid))
+                {
+                    XmlElement realClid = document.CreateElement("RealClid");
+                    realClid.InnerText = ConfigurationHelper.Clid;
+                    car.AppendChild(realClid);
+                    if (!String.IsNullOrEmpty(ConfigurationHelper.TaxiName))
+                    {
+                        XmlElement realName = document.CreateElement("RealName");
+                        realName.InnerText = ConfigurationHelper.TaxiName;
+                        car.AppendChild(realName);
+                    }
+
+                    if (!String.IsNullOrEmpty(ConfigurationHelper.TaxiSite))
+                    {
+                        XmlElement realWeb = document.CreateElement("RealWeb");
+                        realWeb.InnerText = ConfigurationHelper.TaxiSite;
+                        car.AppendChild(realWeb);
+                    }
+                }
 
                 XmlElement tariff = document.CreateElement("Tariff");
                 tariff.InnerText = tarif;
@@ -377,11 +396,42 @@ namespace Core.Extension.XmlConverter
                 //TODO Driver Details
                 XmlElement driverDetails = document.CreateElement("DriverDetails");
                 XmlElement displayName = document.CreateElement("DisplayName");
+                try
+                {
+                    displayName.InnerText = String.Format("{0} {1} {2}", item.Fam.Trim(), item.Im.Trim(), item.Otch.Trim());
+                }
+                catch
+                {
+                    displayName.InnerText = String.Empty;
+                    if (!String.IsNullOrEmpty(item.Fam))
+                    {
+                        displayName.InnerText += item.Fam.Trim();
+                    }
+                    if (!String.IsNullOrEmpty(item.Im))
+                    {
+                        displayName.InnerText += " " + item.Im.Trim();
+                    }
+                    if (!String.IsNullOrEmpty(item.Otch))
+                    {
+                        displayName.InnerText += " " + item.Otch.Trim();
+                    }
+                }
                 driverDetails.AppendChild(displayName);
                 XmlElement phone = document.CreateElement("Phone");
+                phone.InnerText = item.Tel;
                 driverDetails.AppendChild(phone);
                 XmlElement driverAge = document.CreateElement("Age");
+                if (item.dtB.HasValue)
+                {
+                    driverAge.InnerText = item.dtB.Value.Year.ToString();
+                }
                 driverDetails.AppendChild(driverAge);
+                XmlElement driverLicense = document.CreateElement("DriverLicense");
+                if (!String.IsNullOrEmpty(item.UD))
+                {
+                    driverLicense.InnerText = item.UD;
+                }
+                driverDetails.AppendChild(driverLicense);
                 car.AppendChild(driverDetails);
 
                 XmlElement carDetails = document.CreateElement("CarDetails");
@@ -485,7 +535,7 @@ namespace Core.Extension.XmlConverter
             return document.OuterXml;
         }
 
-        public static String ToXmlBlackListString(this List<BlackPhone> blackPhoneList)
+        public static String ToXmlBlackListString(this IEnumerable<BlackPhone> blackPhoneList)
         {
             XmlDocument document = new XmlDocument();
             XmlDeclaration xmldecl;
@@ -502,7 +552,7 @@ namespace Core.Extension.XmlConverter
             return document.OuterXml;
         }
 
-        public static String ToXmlDriverStatusString(this List<DriverShedule> driverStatusList)
+        public static String ToXmlDriverStatusString(this IEnumerable<DriverShedule> driverStatusList)
         {
             XmlDocument document = new XmlDocument();
             XmlDeclaration xmldecl;
@@ -522,7 +572,7 @@ namespace Core.Extension.XmlConverter
             return document.OuterXml;
         }
 
-        public static String ToXmlDriverTrekString(this List<DriverShedule> driverTrekList)
+        public static String ToXmlDriverTrekString(this IEnumerable<DriverShedule> driverTrekList)
         {
             XmlDocument document = new XmlDocument();
             XmlDeclaration xmldecl;
@@ -555,7 +605,7 @@ namespace Core.Extension.XmlConverter
                     }
                 }
             }
-            
+
             document.AppendChild(tracks);
             document.InsertBefore(xmldecl, tracks);
             return document.OuterXml;

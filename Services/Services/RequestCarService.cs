@@ -9,6 +9,7 @@
     using Services.Interfaces;
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Globalization;
     using System.Linq;
     using System.Net;
@@ -168,9 +169,10 @@
                 {
                     String res = client.DownloadString(uri);
                 }
-                catch (WebException)
+                catch (WebException e)
                 {
-                    return HttpStatusCode.BadRequest;
+                    Trace.TraceInformation("{0} Error update in Yandex {1}: {2}", DateTime.Now.ToString(), url, e.Message);
+                    return HttpStatusCode.InternalServerError;
                 }
             }
 
@@ -241,7 +243,7 @@
 
         private FindDriverInStorage GetRequestStatusDriver(List<String> driversId)
         {
-            List<Driver> listDriver = _driverService.GetDrivers();
+            IEnumerable<Driver> listDriver = _driverService.GetDrivers();
 
             if (driversId.All(x => listDriver.Select(z => z.ID_DRIVER.ToString()).Contains(x)))
             {

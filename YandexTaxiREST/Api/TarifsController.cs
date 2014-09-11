@@ -19,7 +19,6 @@ namespace YandexTaxiREST.WebAPI
         // GET api/values
         public HttpResponseMessage Get()
         {
-            throw new Exception("Erororoororor esdsdsd");
             return new HttpResponseMessage()
             {
                 Content = new StringContent(

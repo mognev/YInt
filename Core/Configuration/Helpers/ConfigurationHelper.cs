@@ -191,5 +191,31 @@ namespace Core.Configuration.Helpers
             }
         }
 
+        public static String TaxiSite
+        {
+            get
+            {
+                if (String.IsNullOrEmpty(ConfigurationManager.AppSettings["TaxiSite"]))
+                {
+                    return null;
+                }
+
+                return ConfigurationManager.AppSettings["TaxiSite"].ToString();
+            }
+        }
+
+        public static String TaxiName
+        {
+            get
+            {
+                if (String.IsNullOrEmpty(ConfigurationManager.AppSettings["TaxiName"]))
+                {
+                    return null;
+                }
+
+                return ConfigurationManager.AppSettings["TaxiName"].ToString();
+            }
+        }
+
     }
 }

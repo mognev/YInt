@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Core.Domain
 {
@@ -21,6 +22,8 @@ namespace Core.Domain
         public String Otch { get; set; }
         public String Tel { get; set; }
         public Int32? IsCondition { get; set; }
+        public String UD { get; set; }
+        public DateTime? dtB { get; set; }
 
         // Location data
         public Single? PosX { get; set; }

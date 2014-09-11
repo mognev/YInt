@@ -5,6 +5,6 @@ namespace Business.Services.Interfaces
 {
     public interface IBlackListService
     {
-        List<BlackPhone> GetBlackList();
+        IEnumerable<BlackPhone> GetBlackList();
     }
 }

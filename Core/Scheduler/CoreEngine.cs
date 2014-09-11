@@ -21,30 +21,8 @@ namespace Core.Scheduler
         /// <param name="config">Config</param>
         public void Initialize(YandexServicesConfig config)
         {
-            //run all IStartupTask implementations
-            //RunStartupTasks();
-
             StartScheduledTasks(config);
         }
-
-        //private void RunStartupTasks()
-        //{
-        //    //TODO: remove newing.
-        //    //ITypeFinder typeFinder = this._containerManager.Resolve<ITypeFinder>();
-        //    ITypeFinder typeFinder = new WebAppTypeFinder();
-
-        //    IEnumerable<Type> startUpTaskTypes = typeFinder.FindClassesOfType<IStartupTask>();
-        //    List<IStartupTask> startUpTasks = new List<IStartupTask>();
-        //    foreach (Type type in startUpTaskTypes)
-        //    {
-        //        startUpTasks.Add((IStartupTask) Activator.CreateInstance(type));
-        //    }
-        //    startUpTasks = startUpTasks.AsQueryable().OrderBy(t => t.Order).ToList();
-        //    foreach (IStartupTask task in startUpTasks)
-        //    {
-        //        task.Execute();
-        //    }
-        //}
 
         //TODO: refactor to remove. According to 2.3
         private void StartScheduledTasks(YandexServicesConfig config)

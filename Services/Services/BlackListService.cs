@@ -19,7 +19,7 @@ namespace Business.Services
             _blackListRepository = blackListRepository;
         }
 
-        public List<BlackPhone> GetBlackList()
+        public IEnumerable<BlackPhone> GetBlackList()
         {
            return _db.ExecuteStoredProcedure<BlackPhone>("[dbo].[sp_y_GetPhoneBlockList]");
         }

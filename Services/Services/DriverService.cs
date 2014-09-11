@@ -20,12 +20,12 @@ namespace Business.Services
             _driverRepository = driverRepository;
         }
 
-        public List<Driver> GetDrivers()
+        public IEnumerable<Driver> GetDrivers()
         {
                return _db.ExecuteStoredProcedure<Driver>("[dbo].[sp_y_GetAllDriverList]");
         }
 
-        public List<DriverShedule> SheduleGetDrivers()
+        public IEnumerable<DriverShedule> SheduleGetDrivers()
         {
               return _db.ExecuteStoredProcedure<DriverShedule>("[dbo].[sp_y_GetDriverList]");
         }

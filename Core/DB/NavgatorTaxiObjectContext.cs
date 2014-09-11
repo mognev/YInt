@@ -40,11 +40,11 @@ namespace Core.DB
             this.Database.ExecuteSqlCommand(sql, sqlParameters);
         }
 
-        public List<TEntity> ExecuteStoredProcedure<TEntity>(String storedProcedureName, params StoredProcedureParameter[] parameters)
+        public IEnumerable<TEntity> ExecuteStoredProcedure<TEntity>(String storedProcedureName, params StoredProcedureParameter[] parameters)
             where TEntity : EntityBase
         {
             //TODO add SQL parametrs
-            return this.Database.SqlQuery<TEntity>("exec " + storedProcedureName).ToList();
+            return this.Database.SqlQuery<TEntity>("exec " + storedProcedureName);
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

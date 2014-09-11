@@ -66,7 +66,7 @@ namespace Business.Services
 
         public Order GetConfirmationOrder()
         {
-            return _orderRepository.Table.Where(x => x.YandexAcceptOrder.Value && !x.IsDeleted.Value).ToList().LastOrDefault();
+            return _orderRepository.Table.Where(x => x.YandexAcceptOrder.Value && !x.IsDeleted.Value).LastOrDefault();
         }
 
         /// <summary>

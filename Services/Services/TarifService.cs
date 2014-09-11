@@ -16,9 +16,9 @@ namespace Business.Services
             _tarifRepository = tarifRepository;
         }
 
-        public List<Tarif> GetTarifs()
+        public IEnumerable<Tarif> GetTarifs()
         {
-            return _tarifRepository.Table.Where(x => x.IsActive == 1).ToList();
+            return _tarifRepository.Table.Where(x => x.IsActive == 1).AsEnumerable();
         }
 
         public Tarif GetFirstTarif()

@@ -13,7 +13,7 @@ namespace Core.Db.Interfaces
         System.Data.Entity.Infrastructure.DbEntityEntry GetDbEntityEntry<TEntity>(TEntity entity)
             where TEntity : EntityBase;
         void ExecuteStoredProcedure(String storedProcedureName, params StoredProcedureParameter[] parameters);
-        List<TEntity> ExecuteStoredProcedure<TEntity>(String storedProcedureName, 
+        IEnumerable<TEntity> ExecuteStoredProcedure<TEntity>(String storedProcedureName, 
                                                       params StoredProcedureParameter[] parameters) where TEntity : EntityBase;
     }
 }
